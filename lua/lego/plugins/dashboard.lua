@@ -51,7 +51,7 @@ return {
             --keymap = 'SPC f f',
             key_hl = 'Number',
             key_format = ' %s',
-            action = 'Ex'
+            action = 'NvimTreeToggle'
           },
 
           {

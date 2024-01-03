@@ -10,6 +10,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
   {
-    {import = "lego.plugins"}
+    {import = "lego.plugins"},
+    {import = "lego.plugins.lsp"}
   },
 })
