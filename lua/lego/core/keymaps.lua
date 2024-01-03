@@ -25,3 +25,5 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy f
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+keymap.set("n", "<leader>oh", "<cmd>ToggleTerm size=10 direction=horizontal<CR>", { desc = "Open Terminal horizontally" })
+keymap.set("n", "<leader>ov", "<cmd>ToggleTerm size=45 direction=vertical<CR>", { desc = "Open Terminal vertically" })
