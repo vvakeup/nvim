@@ -15,10 +15,10 @@ return {
       zindex = 1000,
     },
     layout = {
-      height = { min = 5, max = 8 }, 
-      width = { min = 25, max = 60 }, 
-      spacing = 4, 
-      align = "left", 
+      height = { min = 5, max = 8 },
+      width = { min = 25, max = 60 },
+      spacing = 4,
+      align = "left",
     },
   }
 }
