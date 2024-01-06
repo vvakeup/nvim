@@ -8,12 +8,12 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
 config = function()
 local colors = {
-  blue   = '#80a0ff',
-  cyan   = '#79dac8',
-  black  = '#080808',
-  white  = '#c6c6c6',
-  red    = '#ff5189',
-  violet = '#d183e8',
+  blue   = '#255a62',
+  cyan   = '#5fb1c2',
+  black  = '#1d485f',
+  white  = '#e5c49e',
+  red    = '#db662d',
+  violet = '#77dbd4',
   grey   = '#303030',
 }
 
@@ -37,8 +37,8 @@ local bubbles_theme = {
 
 require('lualine').setup {
   options = {
-    --theme = bubbles_theme,
-    theme = 'catppuccin-frappe',
+    theme = bubbles_theme,
+    --theme = 'catppuccin-frappe',
     --theme = 'catppuccin-mocha',
     component_separators = '|',
     section_separators = { left = '', right = '' },
