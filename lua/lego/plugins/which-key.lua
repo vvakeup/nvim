@@ -9,7 +9,7 @@ return {
     window = {
       border = "rounded",
       position = "bottom",
-      margin = { 0, 0, 0, 0 }, 
+      margin = { 0, 0, 0, 0 },
       padding = { 0, 0, 0, 0 },
       winblend = 0,
       zindex = 1000,

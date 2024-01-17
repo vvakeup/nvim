@@ -1,12 +1,10 @@
-print("lego.core.keymaps")	
-
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
-keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) 
+keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
@@ -25,5 +23,15 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy f
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
-keymap.set("n", "<leader>oh", "<cmd>ToggleTerm size=10 direction=horizontal<CR>", { desc = "Open Terminal horizontally" })
-keymap.set("n", "<leader>ov", "<cmd>ToggleTerm size=45 direction=vertical<CR>", { desc = "Open Terminal vertically" })
+keymap.set("n", "<leader>ot", "<cmd>ToggleTerm<CR>", { desc = "Open Terminal" })
+
+keymap.set("n", "<leader>or", function()
+  local currbuf = vim.fn.bufnr('%')
+  if vim.bo[currbuf].filetype == 'python' then
+      vim.cmd([[TermExec cmd="python3 %"]])
+  elseif vim.bo[currbuf].filetype == 'lua' then
+      vim.cmd([[so %]])
+  end
+end,
+{desc = "Execute command in terminal"})
+

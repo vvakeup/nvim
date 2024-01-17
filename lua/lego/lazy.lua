@@ -1,5 +1,3 @@
-print("lego.lazy.lua")
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -9,8 +7,22 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
-  {
+  spec = {
     {import = "lego.plugins"},
     {import = "lego.plugins.lsp"}
+  },
+  ui = {
+    border = "rounded",
+    size = {
+      width = 0.8,
+      height = 0.8,
+    },
+  checker = {
+      enabled = true,
+      notify = false,
+    },
+  change_detection = {
+      notify = false,
+    },
   },
 })

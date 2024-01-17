@@ -1,5 +1,3 @@
-print('lego.plugins.dashboard.lua')
-
 local ascii_wave = {
     '',
     ' ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣀⠀   ',

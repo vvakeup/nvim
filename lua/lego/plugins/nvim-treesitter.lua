@@ -25,7 +25,27 @@ return {
         -- ensure these language parsers are installed
         ensure_installed = {
           "python",
-          "lua"
+          "lua",
+          "bash",
+          "vim",
+          "json",
+          "javascript",
+          "typescript",
+          "yaml",
+          "html",
+          "css",
+          "query",
+          "gitignore",
+          "markdown",
+          "markdown_inline",
+          "vimdoc",
+          "luadoc",
+          "c",
+          "make",
+          "toml",
+          "glsl",
+          "cmake",
+          "rasi"
         },
         incremental_selection = {
           enable = true,
