@@ -83,7 +83,7 @@ return {
 
 			config = {
 
-				header = ascii_tiolka,
+				header = ascii_lambda,
 
 				center = {
 
@@ -120,6 +120,30 @@ return {
 						key_hl = "Number",
 						key_format = " %s",
 						action = "checkhealth",
+					},
+
+					{
+						icon = "  ",
+						icon_hl = "Number",
+						desc = "Lazy",
+						desc_hl = "Title",
+						key = "l",
+						--keymap = 'SPC f f',
+						key_hl = "Number",
+						key_format = " %s",
+						action = "Lazy",
+					},
+
+					{
+						icon = "  ",
+						icon_hl = "Number",
+						desc = "Mason",
+						desc_hl = "Title",
+						key = "m",
+						--keymap = 'SPC f f',
+						key_hl = "Number",
+						key_format = " %s",
+						action = "Mason",
 					},
 				},
 
