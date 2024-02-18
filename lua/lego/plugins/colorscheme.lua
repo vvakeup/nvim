@@ -114,5 +114,18 @@ M.catppuccin = {
 		vim.cmd.colorscheme("catppuccin")
 	end,
 }
+M.tokyonight = {
+	"phha/zenburn.nvim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("zenburn").setup({
+			options = {
+				theme = "zenburn",
+			},
+		})
+		vim.cmd([[colorscheme zenburn]])
+	end,
+}
 
 return M.catppuccin

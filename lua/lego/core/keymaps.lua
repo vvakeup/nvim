@@ -27,7 +27,7 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find s
 keymap.set("n", "<leader>or", function()
 	local currbuf = vim.fn.bufnr("%")
 	if vim.bo[currbuf].filetype == "python" then
-		vim.cmd([["!python3 %"]])
+		vim.cmd([[!python3 %]])
 	elseif vim.bo[currbuf].filetype == "lua" then
 		vim.cmd([[so %]])
 	end
